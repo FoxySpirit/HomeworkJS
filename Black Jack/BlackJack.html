@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Black Jack Game</title>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+</style>
+</head>
+<body>
+
+
+  <script src="BlackJack.js"></script>
+
+  <table style="width:100%">
+    <tr>
+      <th id="res">  </th>
+      <th>You</th>
+      <th>Dealer</th>
+    </tr>
+    <tr>
+      <td>Cards</td>
+      <td id="yc"> 0 </td>
+      <td id="dc"> 0 </td>
+    </tr>
+    <tr>
+      <td>Points</td>
+      <td id="yp"> 0 </td>
+      <td id="dp"> 0 </td>
+    </tr>
+  </table>
+
+  <button type="button" onclick= "PlayIt.NG();" >New game</button>
+  <button type="button" onclick="PlayIt.Getmore()">Get card</button>
+  <button type="button" onclick="PlayIt.GetResult()">Result</button>
+
+
+  </body>
+  </html>
